@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compressing</title>
+</head>
+<body>
+<input id="upload" type="file" accept="image/*">
+<div>
+    <h2>Original Image</h2>
+    <img
+            style="margin-top: 5px;"
+            id="originalImage"
+            crossorigin="anonymous"
+    >
+</div>
+
+<div style="margin-top: 5px;">
+    <span>Resizing: </span>
+    <input type="range" min="1" max="100" value="80" id="resizingRange">
+</div>
+
+<div style="margin-top: 5px; margin-left: 8px;">
+    <span>Quality: </span>
+    <input type="range" min="1" max="100" value="80" id="qualityRange">
+</div>
+
+<h2>Compressed Image</h2>
+<div><b>Size:</b> <span id="size"></span></div>
+<img id="compressedImage">
+
+<div>
+    <button id="uploadButton">Upload to Img</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

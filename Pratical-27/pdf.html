@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.56/pdfmake.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.56/vfs_fonts.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            function downloadPdf() {
+                var docDefinition = {
+                    content: [
+                        {text:"JavaScript  often abbreviated as JS, is a programming language and core technology of the World Wide Web, alongside HTML and CSS. As of 2023, 98.7% of websites use JavaScript on the client side for webpage behavior,[10] often incorporating third-party libraries. All major web browsers have a dedicated JavaScript engine to execute the code on users' devices."}
+                    ],
+                    defaultStyle: {
+                    }
+                };
+                pdfMake.createPdf(docDefinition).print();
+            }
+        </script>
+        <button onclick="downloadPdf()">Print pdf</button>
+    </body>
+</html>
